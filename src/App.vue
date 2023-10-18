@@ -1,10 +1,12 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+  import { RouterLink, RouterView } from 'vue-router'
+  import ContactHeaderComponent from './components/ContactHeaderComponent.vue';
+  import HeaderComponent from './components/HeaderComponent.vue';
 </script>
 
 <template>
-  <RouterLink to="/">Home</RouterLink>
-  <RouterLink to="/about">About</RouterLink>
+  <ContactHeaderComponent />
+  <HeaderComponent />
   <br>
   <RouterView />
 </template>
